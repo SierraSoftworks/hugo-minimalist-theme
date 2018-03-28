@@ -508,6 +508,14 @@ blockquote::before {
   padding: 0 5%;
 }
 
+/* Necessary to ensure that anchor links are offset by at least the menubar's height */
+[id]::before {
+  content: "";
+  display: inline-block;
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
 .menubar > * {
   margin: 0 10px;
 }
