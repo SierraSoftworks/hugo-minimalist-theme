@@ -496,6 +496,7 @@ blockquote::before {
   position: sticky;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
   
@@ -509,6 +510,20 @@ blockquote::before {
 
 .menubar > * {
   margin: 0 10px;
+}
+
+.menubar-expander {
+  display: none;
+}
+
+input.menubar-expander {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+}
+
+label.menubar-expander {
+  text-align: center;
 }
 
 .menubar > .site-title {
@@ -813,8 +828,7 @@ body.post-template .site-header h2 .logo {
 }
 @media only screen and (max-width: 719px) {
   .container {
-    width: 90%;
-    padding-top: 25px; }
+    width: 90%; }
 
   aside, .content {
     width: 100%;
@@ -834,7 +848,42 @@ body.post-template .site-header h2 .logo {
   }
   .site-header h2 {
     font-size: 36px;
-    background-size: 90px 74px; } }
+    background-size: 90px 74px; }
+
+  .menubar {
+    margin: 0 -5%;
+    padding: 0;
+  }
+
+  .menubar-expander {
+    display: block;
+  }
+
+  input.menubar-expander:not(:checked) + label ~ * {
+    height: 0;
+  }
+
+  input.menubar-expander:checked + label ~ * {
+    height: 80px;
+  }
+
+  label.menubar-expander {
+    padding: 0 5%;
+  }
+
+  .menubar .site-title {
+    padding: 0 10%;
+  }
+
+  .menubar > *:not(.menubar-expander):not(.site-title) {
+    width: 100%;
+    padding: 0 10%;
+    margin: 0;
+    overflow: hidden;
+    transition: height 0.25s ease;
+  }
+}
+
 .ir {
   background-color: transparent;
   border: 0;

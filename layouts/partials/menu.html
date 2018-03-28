@@ -3,6 +3,11 @@
         {{ .Site.Title }}
     </a>
 
+    <input type="checkbox" id="menubar-expander" class="menubar-expander">
+    <label for="menubar-expander" class="menubar-expander">
+        <i class="icon-menu"></i>
+    </label>
+
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
