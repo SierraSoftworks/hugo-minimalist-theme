@@ -913,3 +913,28 @@ body.post-template .site-header h2 .logo {
 
 .clearfix:after {
   clear: both; }
+
+table {
+  margin: 2em 0;
+}
+
+tr > td,
+tr > th {
+  padding: 0.5em 0.4em;
+}
+
+tr > th {
+  border-bottom: 1px solid #eee;
+}
+
+tr > td {
+  border-right: 1px solid #eee;
+}
+
+tr > td:last-of-type {
+  border-right: transparent;
+}
+
+tr:last-of-type > td {
+  border-bottom: 1px solid #eee;
+}
