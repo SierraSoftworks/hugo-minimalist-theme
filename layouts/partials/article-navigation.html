@@ -1,0 +1,8 @@
+<div class="article-navigation">
+    {{ if .PrevInSection }}
+    <a class="btn prev" href="{{ .PrevInSection.Permalink }}" title="{{ .Site.Data.l10n.article.previous }}">&lsaquo; {{ .Site.Data.l10n.article.previous }}</a>
+    {{ end }}
+    {{ if .NextInSection }}
+    <a class="btn prev" href="{{ .NextInSection.Permalink }}" title="{{ .Site.Data.l10n.article.next }}">{{ .Site.Data.l10n.article.next }} &rsaquo;</a>
+    {{ end }}
+</div>

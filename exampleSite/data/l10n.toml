@@ -6,6 +6,8 @@
     back_to_home = "Back to home"
     posted_on = "Posted on"
     tagged_in = "Tagged in"
+    previous = "Previous"
+    next = "Next"
 
 [comments]
     comments = "Comments"

@@ -726,6 +726,12 @@ body.post-template .site-header h2 .logo {
   margin: -45px 0 0 -37px;
   background-size: 90px 74px; }
 
+.article-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 720px) {
   .container {
     width: 100%;
