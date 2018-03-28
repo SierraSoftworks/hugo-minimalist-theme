@@ -758,8 +758,11 @@ body.post-template .site-header h2 .logo {
 @media only screen and (min-width: 720px) {
   .container {
     width: 100%;
-    background: #fff;
-    box-shadow: 0 0 20px #000; }
+    background: #fff; }
+
+  .site-content {
+    box-shadow: 0 0 20px #000;
+  }
 
   .site-header {
     position: fixed;

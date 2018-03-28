@@ -1,4 +1,4 @@
-<div class="container clearfix">
+<div class="site-content container clearfix">
     <main role="main" class="content">
         {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
         {{ range $paginator.Pages }}
