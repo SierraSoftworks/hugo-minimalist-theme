@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-<div class="container clearfix">
+<section class="container clearfix">
     <main role="main" class="content">
         <a class="btn home" href="{{ .Site.BaseURL }}" title="{{ .Site.Data.l10n.article.back_to_home }}">&laquo; {{ .Site.Data.l10n.article.back_to_home }}</a>
         {{ $paginator := .Paginate .Data.Pages }}
@@ -10,5 +10,5 @@
     </main>
 
     {{ partial "author" . }}
-</div>
+</section>
 {{ partial "footer" . }}
