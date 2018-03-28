@@ -3,6 +3,10 @@
     {{ partial "menu" . }}
 
     <main role="main" class="content">
+        {{ if .Content }}
+        {{ .Content }}
+        {{ end }}
+
         {{ $paginator := .Paginate .Data.Pages }}
         {{ range $paginator.Pages }}
             {{ .Render "summary" }}
