@@ -2,6 +2,9 @@
     {{ if .PrevInSection }}
     <a class="btn prev" href="{{ .PrevInSection.Permalink }}" title="{{ .Site.Data.l10n.article.previous }}">&lsaquo; {{ .Site.Data.l10n.article.previous }}</a>
     {{ end }}
+    
+    <a class="btn home" href="{{ .Site.BaseURL }}" title="{{ .Site.Data.l10n.article.back_to_home }}">&laquo; {{ .Site.Data.l10n.article.back_to_home }}</a>
+
     {{ if .NextInSection }}
     <a class="btn prev" href="{{ .NextInSection.Permalink }}" title="{{ .Site.Data.l10n.article.next }}">{{ .Site.Data.l10n.article.next }} &rsaquo;</a>
     {{ end }}

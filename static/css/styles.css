@@ -747,6 +747,14 @@ body.post-template .site-header h2 .logo {
   justify-content: space-between;
 }
 
+.article-navigation a {
+  margin: 0 5px;
+}
+
+.article-navigation a.home {
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 720px) {
   .container {
     width: 100%;
