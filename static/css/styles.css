@@ -492,7 +492,7 @@ blockquote::before {
   width: 1200px;
   padding: 50px 0 0 0; }
 
-.author {
+aside {
   text-align: center;
   width: 25%;
   float: left;
@@ -778,7 +778,7 @@ body.post-template .site-header h2 .logo {
       font-size: 56px;
   }
 
-  .author {
+  aside {
     position: sticky;
     top: 50px;
   }
@@ -788,11 +788,11 @@ body.post-template .site-header h2 .logo {
     width: 90%;
     padding-top: 25px; }
 
-  .author, .content {
+  aside, .content {
     width: 100%;
     margin: 0; }
 
-  .author {
+  aside {
     margin-bottom: 60px; }
 
   .site-header,
