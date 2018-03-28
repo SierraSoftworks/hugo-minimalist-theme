@@ -501,8 +501,7 @@ blockquote::before {
 .content {
   width: 60%;
   margin-right: 5%;
-  float: right;
-  box-shadow: 0 0 20px #000; }
+  float: right; }
 
 .site-header {
   background: #2a373d url(../img/header-bg.jpg) no-repeat center center;
@@ -759,7 +758,8 @@ body.post-template .site-header h2 .logo {
 @media only screen and (min-width: 720px) {
   .container {
     width: 100%;
-    background: #fff; }
+    background: #fff;
+    box-shadow: 0 0 20px #000; }
 
   .site-header {
     position: fixed;
