@@ -1,0 +1,17 @@
+<header class="menubar" role="menubar">
+    <a class="site-title" href="{{ .Site.BaseURL }}">
+        {{ .Site.Title }}
+    </a>
+
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+
+        {{ else }}
+            <a href="{{ .URL }}" {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}class="active"{{ end }} title="{{ .Title }}" {{ if not .Page }}target="_blank"{{ end }}>
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+        {{ end }}
+    {{ end }}
+</header>
