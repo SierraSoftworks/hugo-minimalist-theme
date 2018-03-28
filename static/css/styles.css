@@ -501,7 +501,8 @@ blockquote::before {
 .content {
   width: 60%;
   margin-right: 5%;
-  float: right; }
+  float: right;
+  box-shadow: 0 0 20px #000; }
 
 .site-header {
   background: #2a373d url(../img/header-bg.jpg) no-repeat center center;
