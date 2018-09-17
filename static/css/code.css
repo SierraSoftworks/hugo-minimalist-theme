@@ -1,0 +1,104 @@
+.hljs,
+.chroma {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: white;
+    color: black
+}
+
+.hljs code,
+.chroma code {
+    color: black
+}
+
+
+.chroma .w {
+
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-section,
+.hljs-addition,
+.hljs-attribute,
+.hljs-link {
+    color: #333
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.chroma .nc,
+.chroma .ni,
+.chroma .ne,
+.chroma .nn,
+.chroma .nv,
+.chroma .nt {
+    font-weight: bold;
+}
+
+.hljs-string,
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+    color: #B21D12;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta,
+.hljs-deletion,
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+    color: #888
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-name,
+.hljs-type,
+.hljs-strong,
+.hljs-attr,
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt,
+.chroma .gh,
+.chroma .gp,
+.chroma .gs,
+.chroma .gu {
+    font-weight: bold
+}
+
+.hljs-literal,
+.hljs-number {
+    color: #409EFF;
+    font-weight: bold;
+}
+
+.hljs-emphasis,
+.chroma .ge {
+    font-style: italic
+}

@@ -1,6 +1,8 @@
 <header class="menubar" role="menubar">
+    <img src="{{ .Site.Params.logo }}" alt="" class="site-logo">
     <a class="site-title" href="{{ .Site.BaseURL }}">
         {{ .Site.Title }}
+        <span class="site-title__subtitle">{{ .Site.Params.subtitle }}</span>
     </a>
 
     <input type="checkbox" id="menubar-expander" class="menubar-expander">
