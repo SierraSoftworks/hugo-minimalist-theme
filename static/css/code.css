@@ -30,8 +30,10 @@
 
 .hljs-variable,
 .hljs-template-variable,
+.chroma .n,
 .chroma .nc,
 .chroma .ni,
+.chroma .nf,
 .chroma .ne,
 .chroma .nn,
 .chroma .nv,
