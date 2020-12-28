@@ -23,6 +23,8 @@
     {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
+
+    {{ partial "tracking-tags" . }}
 </head>
 
 <body>
